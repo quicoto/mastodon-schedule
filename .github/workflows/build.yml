@@ -33,10 +33,5 @@ jobs:
           python3 schedule.py --instance https://ricard.social        \
               --access-token ${{ secrets.ACCESS_TOKEN }}
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v4
-        with:
-          folder: dist
-
       - name: Commit changes 💾
         uses: stefanzweifel/git-auto-commit-action@v4

@@ -28,7 +28,7 @@ with open(fileName, 'r') as f:
   if len(posts) > 0:
     # We only want to post 1 item at a time
     mstdn.status_post(
-      status = posts[0]
+      status = posts[0],
       visibility = "public",
       language = "en"
     )
